@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>App-design</title>
+<meta name="viewport" content="width-device-width, initial scale=1">
+<link rel="stylesheet" href="css/over.css" />
+<link rel="stylesheet" href="css/themes/GuiaLN.css" />
+<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="jquery.mobile-1.4.5.css">
+<script src="jquery-1.12.2.min.js"></script>
+<script src="jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+<body>
+	
+<div id="inicio" data-role="page" data-theme="c">
+
+<div id="botonera" data-role="content">
+
+		<!--<a href="#" id="btn_guardar">Guardar dato</a>
+		<a href="#" id="btn_ver">Ver datos</a>-->
+		<div id="recorridos-btn">
+		<a href="#recorridos" class="ui-btn" data-transition="slide">Recorridos</a>
+		</div>
+
+		<div id="shakeit-btn">
+		<a href="#shakeit" id="shakeit-button" class="ui-btn" data-transition="slide">Shake it</a>
+		</div>
+
+		<div id="qr-btn">
+		<a href="#qr" id="qr-button" class="ui-btn" data-transition="slide">QR Trailers</a>
+		</div>
+
+		<div id="badge-btn">
+		<a href="#badges" id="badge-button"class="ui-btn" data-transition="slide">Guía Badges</a>
+		</div>
+
+		<!--<a href="#" id="saludo">Saludar</a>-->
+
+</div>
+
+</div> <!-- FIN DE INICIO -->
+
+
+
+<div id="recorridos" data-role="page" data-theme="c">
+
+<div id="header-recorridos" data-role="header" style="overflow:hidden;">
+<h1>Recorridos</h1>
+    <a href="#config" data-icon="gear" class="ui-btn-right" data-transition="slide">Configuración</a>
+	<a href="#inicio" data-icon="arrow-l" class="ui-btn-left" data-transition="slide">Volver</a>
+</div>
+
+<a href="#cine"><img src="mapa-19.jpg"></a>
+
+</div>
+
+<div id="cine" data-role="page" data-theme="c">
+	
+<div id="header-cine" data-role="header" style="overflow:hidden;">
+<h1>Recorridos</h1>
+	<a href="#recorridos" data-icon="arrow-l" class="ui-btn-left" data-transition="slide">Volver</a>
+</div>
+
+<img src="detail-20.jpg">
+
+</div>
+
+
+<div id="config" data-role="page" data-theme="c">
+	
+<div id="header-config" data-role="header" style="overflow:hidden;">
+	<h1>Configuración</h1>
+    <a href="#recorridos" data-icon="arrow-l" class="ui-btn-left" data-transition="slide">Volver</a>
+	</div>
+
+
+<div data-role="content">
+	
+	<form>
+	<label>
+	<input type="checkbox" name="checkbox-0">Recorridos
+	</label>
+	</form>
+	<p>Geolocalización del dispositivo para mostrar cines cercanos</p>
+
+	<form>
+	<label>
+	<input type="checkbox" name="checkbox-0 ">Configuración de gustos
+	</label>
+	</form>
+	<p>Notifica de la cercanía de cines con películas que correspondan a la configuración personal</p>
+
+	<h2>Gustos</h2>
+
+	<form>
+	<div class="ui-field-contain">
+	<label for="select1">Tipo de Película 1</label>
+	<select name="select-native-1" id="select-native-1" data-mini="true">
+	<option value="1">Acción</option>
+	<option value="2">Drama</option>
+	<option value="3">Suspenso</option>
+	<option value="4">Terror</option>
+	</select>
+	</div>
+	</form>
+
+	<form>
+	<div class="ui-field-contain">
+	<label for="select2">Tipo de Película 2</label>
+	<select name="select-native-2" id="select-native-2" data-mini="true">
+	<option value="1">Acción</option>
+	<option value="2">Drama</option>
+	<option value="3">Suspenso</option>
+	<option value="4">Terror</option>
+	</select>
+	</div>
+	</form>
+
+	<form>
+	<div class="ui-field-contain">
+	<label for="select3">Tipo de Película 3</label>
+	<select name="select-native-3" id="select-native-3" data-mini="true">
+	<option value="1">Acción</option>
+	<option value="2">Drama</option>
+	<option value="3">Suspenso</option>
+	<option value="4">Terror</option>
+	</select>
+	</div>
+	</form>
+
+	<form>
+	<div class="ui-field-contain">
+	<label for="select4">Nacionalidad</label>
+	<select name="select-native-4" id="select-native-4" data-mini="true">
+	<option value="1">Argentina</option>
+	<option value="2">USA</option>
+	<option value="3">Francesa</option>
+	<option value="4">UK</option>
+	</select>
+	</div>
+	</form>
+
+</div>
+
+</div> <!-- CIERRA CONFIG -->
+
+<div id="badges" data-role="page" data-theme="c">
+
+	<div id="header-badges" data-role="header" style="overflow:hidden;">
+	<h1>Guía Badges</h1>
+	<a href="#inicio" id="volver-badges" data-icon="arrow-l" class="ui-btn-left" data-transition="slide">Volver</a>
+	<div data-role="navbar">
+	<ul>
+	<li><a href="#badges" id="navbar1" data-icon="bullets" class="ui-btn-active"></a></li>
+	<li><a href="#collection" id="navbar2" data-icon="star"></a></li>
+	</ul>
+	</div>
+	</div>
+
+	<img src="lista-21.jpg">
+
+	</div>
+
+<div id="collection" data-role="page" data-theme="c">
+
+	<div id="header-badges-2" data-role="header" style="overflow:hidden;">
+	<h1>Guía Badges</h1>
+	<a href="#inicio" id="volver-badges-2" data-icon="arrow-l" class="ui-btn-left" data-transition="slide">Volver</a>
+	<div data-role="navbar">
+	<ul>
+	<li><a href="#badges" id="navbar1-2" data-icon="bullets" class="ui-btn-active"></a></li>
+	<li><a href="#collection" id="navbar2-2" data-icon="star"></a></li>
+	</ul>
+	</div>
+	</div>
+
+	<img src="collection-22.jpg">
+
+	</div>
+
+<div id="qr" data-role="page" data-theme="c">
+
+	<div id="header-qr" data-role="header" style="overflow:hidden;">
+	<h1>QR</h1>
+	<a href="#inicio" id="volver-qr" data-icon="arrow-l" class="ui-btn-left" data-transition="slide">Volver</a>
+	
+	</div>
+
+	<img src="qr-23.jpg">
+
+	</div>
+
+	<div id="shakeit" data-role="page" data-theme="c">
+
+	<div id="header-shakeit" data-role="header" style="overflow:hidden;">
+	<h1>Shake it</h1>
+	<a href="#inicio" id="volver-shakeit" data-icon="arrow-l" class="ui-btn-left" data-transition="slide">Volver</a>
+	
+	</div>
+
+	<img src="shake-25.jpg">
+
+	</div>
+
+
+<script src="app.js"></script>
+</body>
+
+<!-- especificidad del CSS para los estilos -->
