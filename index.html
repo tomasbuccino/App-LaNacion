@@ -8,8 +8,11 @@
 <link rel="stylesheet" href="css/themes/GuiaLN.css" />
 <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
 <link rel="stylesheet" href="jquery.mobile-1.4.5.css">
+<script type="text/javascript" src="app.js"></script>
 <script src="jquery-1.12.2.min.js"></script>
 <script src="jquery.mobile-1.4.5.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAORivJqxvKtCWKxf0_CdJlsKt1oIR4Pq4&callback=initialize"></script>
+<script>google.maps.event.addDomListener(window, 'load', initialize)</script>
 
 </head>
 <body>
@@ -52,7 +55,7 @@
 	<a href="#inicio" data-icon="arrow-l" class="ui-btn-left" data-transition="slide">Volver</a>
 </div>
 
-<a href="#cine"><img src="mapa-19.jpg"></a>
+<div id="map"></div>
 
 </div>
 
@@ -63,7 +66,7 @@
 	<a href="#recorridos" data-icon="arrow-l" class="ui-btn-left" data-transition="slide">Volver</a>
 </div>
 
-<img src="detail-20.jpg">
+
 
 </div>
 
