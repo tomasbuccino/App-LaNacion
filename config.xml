@@ -26,6 +26,8 @@
     <preference name="android-minSdkVersion" value="7" />
     <preference name="android-installLocation" value="auto" />
 
+    <gap:plugin name="org.apache.cordova.geolocation" />
+
     <icon src="icon.png" /> <!-- el icono en realidad es un conjunto de iconos segun la plataforma // http://pgicons.abiro.com/ este es el generador de iconos, que escala imagenesa automaticamente-->
     <icon gap:platform="android" gap:qualifier="ldpi" src="res/icon/android/icon-36-ldpi.png" />
     <icon gap:platform="android" gap:qualifier="mdpi" src="res/icon/android/icon-48-mdpi.png" />
