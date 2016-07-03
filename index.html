@@ -10,6 +10,10 @@
 <link rel="stylesheet" href="jquery.mobile-1.4.5.css">
 <script src="jquery-1.12.2.min.js"></script>
 <script src="jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAORivJqxvKtCWKxf0_CdJlsKt1oIR4Pq4&callback=initialize"></script>
+<script>google.maps.event.addDomListener(window, 'load', initialize)</script>
 
 </head>
 <body>
@@ -53,15 +57,6 @@
 </div>
 
 <div data-role="content" id="map"></div>
-
-</div>
-
-<div id="cine" data-role="page" data-theme="c">
-	
-<div id="header-cine" data-role="header" style="overflow:hidden;">
-<h1>Recorridos</h1>
-	<a href="#recorridos" data-icon="arrow-l" class="ui-btn-left" data-transition="slide">Volver</a>
-</div>
 
 </div>
 
@@ -203,9 +198,7 @@
 	</div>
 
 
-<script type="text/javascript" src="app.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAORivJqxvKtCWKxf0_CdJlsKt1oIR4Pq4&callback=initialize"></script>
-<script>google.maps.event.addDomListener(window, 'load', initialize)</script>
+
 
 </body>
 
